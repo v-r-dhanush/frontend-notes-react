@@ -1,0 +1,14 @@
+.loginForm{
+    border: 5px solid blueviolet;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: auto;
+    margin-top: 225px;
+}
+.form-control{
+    width: 50%;
+    border: solid 3px black;
+}

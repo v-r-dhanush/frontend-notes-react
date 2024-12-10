@@ -1,0 +1,315 @@
+ 28/11/2024
+
+ *Javascript:
+ -It is use to add functionality into webapp.
+ -It is interpreted language.
+ -It is loosely typed language.
+
+
+ *why JS is called loosely typed language
+ -In JS after variable is created we cannot say it what type of data.
+ -In JS loosely typed because after assinging a value of a type to a variable it can be overwritten with another value 
+ of a different type.
+
+ *How to use JS
+ -There are two ways to use JS
+ 1.internal JS : in html file we use script tag and in that we writw js code.
+ 2.external JS  in this we create a seperate JS file and import that JS file in html file by using script tag
+
+ *how to get output in JS
+ 1.document.write() : It will display output in html page.
+ 2.window.alert() : it will display output in model popup window.it will dispaly output in same line
+ 3.console.log() : it will display output in browser console or in terminal.
+ 4.innerHTML(DOM) : it wil display output inside an element.
+
+ ===================================================================================================================
+ 29/11/2024
+
+
+ *Hoisting : moving variable and fumction declaration at top of webpage.
+
+ *variable : It is use to store data in it.
+ -we can create variable in JS by using var,let,const
+
+1. var : -It create function scope variable 
+         -we can use variable before its declration.
+         -we can re-declare variable.
+var mydata; //variable declaration
+    mydata = "changepond"; // variable initialization
+    var mydata; //variable declaration
+
+2.let : It create block scope variable
+        -we can not use variable before its declaration.
+        -we can not re-declare variable.
+
+3.const : It create block scope variable
+        -we can not use variable before its declaration.
+        -In this when we declare a variable at same time we have initialize it.
+        -Its data will never change on run time.
+
+
+//datatype in JS
+// 1 number
+let no1 =  123, no2 = 0.5, no3 = 23456789;
+// 2.string
+let str1 = "hello", str2 = "friends";
+//3.boolean
+let cond1= true, cond2=false;
+//4. null
+let data=null;
+// 5.undefine
+let city;
+// 6.arrat
+let arr=["dhanush","Ravi","Sudha"];
+//7.object data type
+let emp={id:101,name:"musk",post:"tesla"};
+
+
+-exponentiation(**):It return power of any number.
+/use of exponentation
+console.log(2*2*2);
+console.log(2**3);
+
+
+
+==(equal to) : -It check value only and if both are same then it will return true value.
+===(exactly equal to) : -It will check value as well as its datatype and if both are same then it will return true value.
+
+5==5 true;
+5=="5" true;
+5===5 true;
+5==="5"false;
+
+*DOM manupulation
+
+*function: -It is block of code which is used to perform specific task.
+           -function will execute only when we call it.
+           -function can be re-use.
+
+*there are mainly two types of function
+1.predefine function : provide JS to us
+2.usedefine function : user developed for particular use.
+    
+    syntax:
+    function functionName(){
+        //logical code
+    }
+    functionName();
+
+tyes of function:
+
+//1.simple function
+        function greeting(){
+            return "Welcome You all in javascript session <br>";
+        }
+        document.write(greeting());
+        let data=greeting();
+        document.write(data,"<br>");
+
+        //parameterize function
+        function add(num1,num2){
+            return num1+num2;
+        }
+        document.write(add(50,60),"<br>");
+        document.write(add(500,600),"<br>");
+
+        //3.anonymous function : function with no name
+            let mul = function(num1,num2){
+                return num1*num2+"<br>";
+            }
+            document.write(mul(5,3));
+
+        //4.arrow function : function which has no name as well as  no function keyword(=>)
+        // let div=(num1,num2) => {
+        //     return num1/num2+"<br>";
+        // }
+        // document.write(div(100,10));
+
+        let div1 = (num1,num2) => num1/num2 +"<br>"
+        document.write(div1(100,10));
+
+        //5.optional parameterize function : function in which parameter will be optional
+        let fullname=(fname,lname,mname="")=>{
+            return fname+mname+lname+"<br>";
+        }
+        document.write(fullname("dhanush","R"));
+        document.write(fullname("dhanush","R","V"));
+
+        //6.rest parameterize function: when we don't know how many parameters required in this we use thread operator(...)
+        let stdList = (...std)=>{
+            return std;
+        }
+        document.write(stdList("dhanush"," ravi"," sudha"," swetha"," arun"," sanjana"));
+
+
+
+functionName();
+
+*how to change attribute value by using DOM
+*how to call function by using event
+*how to access data from input control
+
+*Array - It is use store multiple values with same data type
+       - In array data store in index basis
+       - array index always start from zero index
+       - we can access array values outside by writting arrayname[indexNumber]
+
+*Array method :
+
+//1.push() : It is use to insert values at last index of an array
+        students.push("mark","sunder");
+        console.log(students);
+
+        //2.pop() : It will remove calues from the last index of an array
+        students.pop();
+        console.log(students);
+
+        //3.unshift() : It is use to insert values at starting index of array
+        students.unshift("ambani","jack ma");
+        console.log(students);
+
+        //4.shift() : It remove values from starting index of an array 
+        students.shift();
+        console.log(students);
+
+        //5.splice(startindex,deletecount,valuestoadd) : It is use to insert and remove values from middle index of an array.
+        students.splice(2,0,"dhanush","ravi");
+        console.log(students);
+
+        students.splice(3,2);//remove two values from third index
+        console.log(students);
+
+        students.splice(3,2,"Sudha","swetha");//remove one value and insert two values from second index
+        console.log(students);
+
+        //6.toString(): it is use to convert array data into string
+        console.log(students.toString());
+
+        //7.join(seperator) : it is use to convert array data into string. it take one parameter to seperate values.
+        console.log(students.join());
+        console.log(students.join("*"));
+        console.log(students.join(" "));
+
+
+*object : -it is use to store multiple values with different data type.
+          -in object data store in key and value paired formats.
+          - we can access object data outside of by writting object.keyname.
+          -object type of data is denoted by {}
+
+
+
+
+*callback function : passing a function name as an argument inside another function is called callback function.
+
+
+*date and time -if we want to dispaly date and time in javascript first we have object of date class 
+-date object return information from browser.
+let objeName = new Date();
+sun=0
+mon=1
+sat=6
+
+jan==0
+feb=1
+dec=11
+
+*form validation : checking user enter data in correct or wrong.
+
+
+==================================================================================================================
+
+02/12/2024
+
+
+*string and its methods
+
+string : It is collection of character.
+        -In string every character has index value and it start from zero.
+        -In string blank space is also consider as string.
+
+-There are three method which index of searching string
+
+1.indexof(searchingString,startIndex?) : -It will search string from left to right and return index of first occurences of string
+                                         -It searching string is not found then return -1 as result.
+                                         Eg:
+                                         document.write(`msg.indexOf("all"):${msg.indexOf("all")}<br>`);
+                                         document.write(`msg.indexOf("all",16):${msg.indexOf("all",16)}<br>`);
+
+2.lastIndexof(searchingString,startIndex?) : -It will search string from right to left and return index of first occurences of string
+                                             -It searching string is not found then return -1 as result.
+                                             Eg:
+                                             document.write(`msg.lastIndexOf("you"):${msg.lastIndexOf("you")}<br>`);
+                                             document.write(`msg.lastIndexOf("you",28):${msg.lastIndexOf("you",28)}<br>`);
+
+3.search(searchingString) : -It will search string from left to right and return index of first occurences of string
+                            -It searching string is not found then return -1 as result.
+                            -It is faster than indexof method.
+                            Eg:
+                            document.write(`:msg.search("changepond")${msg.search("changepond")}<br>`);
+
+-There are three method which retun part of searching string
+
+1.slice(startIndex,endIndex?) : 
+-It will return part of string from big string.
+-If we write +ve index then will search index from left to right.
+-If we write -ve index then will search index from right to left.
+Eg:
+document.write(`msg.slice(15):${msg.slice(15)}<br>`);
+document.write(`msg.slice(15,30):${msg.slice(15, 32)}<br>`);
+document.write(`msg.slice(-20):${msg.slice(-20)}<br>`);
+document.write(`msg.slice(-20,-4):${msg.slice(-20, -4)}<br>`);
+
+2.substring(startIndex,endIndex?) : 
+-It will return part of string from big string.
+-If we write +ve index then will search index from left to right.
+Eg:
+document.write(`msg.substring(10):${msg.substring(10)}<br>`);
+document.write(`msg.substring(10,25):${msg.substring(10, 25)}<br>`);
+
+3.substr(startIndex,totalNumberOfCharacter) : 
+-It will return part of string from big string.
+-If we write +ve index then will search index from left to right.
+Eg:
+document.write(`msg.substr(5,10):${msg.substr(5, 10)}<br>`);
+
+-charAt(index) : It return character from index number.
+-charCodeAt() : It return ASCII code.
+Eg:
+document.write(`msg.charAt(0):${msg.charAt(0)}<br>`);
+document.write(`msg.charCodeAt(0):${msg.charCodeAt(0)}<br>`);
+
+replace() :  
+Eg:
+document.write(`msg.replace("changepond","India"):${msg.replace("changepond","India")}<br>`);
+document.write(`msg.replace("changepond","India"):${msg.replace(/changepond/i,"India")}<br>`);
+document.write(`msg.replace("changepond","India"):${msg.replace(/changepond/ig,"India")}<br>`);
+document.write(`msg.replaceAll("changepond","India"):${msg.replaceAll("changepond","India")}<br>`);
+
+1.split() : It is use to convert string data into array.
+Eg:
+console.log(`${msg} <br>`);
+console.log(msg.split());
+console.log(msg.split(" "));
+
+
+Prompt : It generate one popup window and allows use to inservalue in it.
+
+*setTimeOut : It call another method only one after particular time interval.
+*setInterval : It call another method multiple time after particular time interval.
+
+
+*ES-5(ECMA script 2009)
+-foreach
+-map
+-every
+-filter
+-some
+-reduce/ReduceRight
+
+ES-6(ECMA script 2015)
+-let ,const
+-**
+
+*how to merge two or more array values
+*destructuring : 
+

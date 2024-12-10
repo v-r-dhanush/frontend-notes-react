@@ -1,0 +1,66 @@
+header{background-color: black;
+    border-bottom: 125px solid red;
+    padding: 12px;
+}
+.dmk{
+    border: 5px solid red;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    left: 30px;
+    top: 5px;
+    position: relative;
+}
+.sta{
+    border: 5px solid red;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    left: 30px;
+    top: 5px;
+    position: relative;
+}
+.kala{
+    border: 5px solid red;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    left: 30px;
+    top: 5px;
+    position: relative;
+}
+.anna{
+    border: 5px solid red;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    left: 30px;
+    top: 5px;
+    position: relative;
+}
+.inba{
+    border: 5px solid red;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    left: 30px;
+    top: 5px;
+    position: relative;
+}
+.post-fix{
+    width:60px;
+    border:solid red 4px;
+    position:fixed;
+    right:0px;
+    
+}
+.post-fix img{
+    width:60px;   
+}
+
+.offer{
+    text-align: center;
+    border:4px solid black;
+    background-color: red;
+    font-size: 25px;
+}

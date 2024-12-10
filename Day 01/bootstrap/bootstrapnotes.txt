@@ -1,0 +1,50 @@
+28/11/2024
+
+Bootstrap
+-It is html,css, and javascript framework.
+-It makes webapp attractive, responsive and mobile friendly.
+-It provide inbuilt classes.
+-Latest version of Bootstrap is bootstrap5.
+
+
+*There are two ways to use Bootstrap
+1.By using CDN link : for this you must internet in your system.
+2.By downloading : only for downloading we require internet connection and for use not require internet.
+
+*official website
+getbootstrap.com
+
+*container classes
+*color classes
+*bg-color classes
+*button classes
+*spinner-border classes
+*spinner-grow classes
+*image classes
+*table classes
+*how to use carousel
+*how to use nav
+*how to use accordian
+
+
+*Grid : It is use to manage layout of webapp by using inbuilt classes
+-In Bootstrap grid it provide mainly two classes
+1.row class
+2.col class
+
+-In Bootstrap grid row we can create columns with size 12, if column size is exeeded more than 12 size then column start from new row.
+
+screen width>=1200px  .xl
+screen width>=992px  .lg
+screen width>=768px  .md
+screen width>=576px  .sm
+screen width<576px   .xsm
+
+
+*task : create responsive grid layout for mobile device item
+
+dispaly 6 mobile for xl screen
+dispaly 4 mobile for lg screen
+dispaly 3 mobile for md screen
+dispaly 2 mobile for sm screen
+dispaly 1 mobile for xsm screen

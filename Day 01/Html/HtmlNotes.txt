@@ -1,0 +1,117 @@
+ Day 01  26/11/24
+
+HTML:
+$ It is use to create structure of web app.
+$ It is use to display data to user on browser.
+$ It stand for Hyper Text Markup Language.
+$ The latest version of html is html5.
+
+$ It is tag basis language.
+<tag>
+$ In html we have two types tag
+1. Paired tag : <startTag> </endingTag>
+2. Unpaired Tag : <singleTag>
+
+*steps to create html file.
+1.create html file filename.html or filename.htm
+2.write code in it.
+3.execute it on browser.
+
+Doctype html : It tell search engine this is html type of document belongs to version5
+
+head : It contains external linal links and meta data in it.
+body : write code to display on browser.
+
+ctrl+/ is a shortcut for command.
+
+Meta data : meta tag gives us information about data.
+
+
+task : display =(A+B)2=A2+B2+2AB.
+task : diaplay H2SO4.
+
+*Element it contain starting tag, ending tag, contain of it.
+
+<starting Tag> attribute="value"> content </endingTag>
+
+attribute:-It provide additional information about tag.
+          -It always write in starting tag.
+          -It comes with key and value pairs format.
+
+*In html we have two types of element
+1.Block Element : -The Element which takes 100% with of its screen.
+                  -It always start on new line.
+                  -Eg : h1-h6,p,li,table,form 
+
+2.Inline Element : -The Elementwhich takes required width of it.
+                   -It will never start on new line.
+                   -Eg : b,i,u,img,A
+
+*Type of List in html
+-There are three types of list in html5
+1.ordered List(ol) : type=> number,A,B,C,a,b,c,I,II,III,i,ii,iii
+2.unordered List(ul) : type=>disc,circle,square,none
+3.description List(dl) : there are tag
+                         dl : description list
+                         dt : define term.
+                         dd : define defination.
+
+
+*Insert img in html with relative path
+*Insert multimedia in html with relative path
+
+what is diff b/w html and html5?
+    1. html5 has symantic Element got introduced : the Element which has meaning in it name
+                                                Eg : header,footer,nav,main,section,aside.
+    2. New input type,new attribute and new tag : 
+    3. Multimedia Element introduce : we can insert video and video file.
+    4. Html API introduce : 
+                -Geolocation : -It return user current location.
+                               -If you want to use it,gps must have install in system.
+                -Drag and Drop : grabbing an object from one location and put at another place.
+                -Web-Worker : It is small javascript code which execute at backend of browser without affecting its current execution.
+                -Web-storage : It is use to store user data on browser.
+                                -there are two types of webstorage.
+                                1.local storage : it is used to store user data permantly.
+                                2.session storage : it is use to store user data for limited time.
+                -SSE(server sent Event) : it allows us to get automatic update from server.
+
+
+In Html <br> tag is use for line break
+
+*iframe : it is used to create small window in webpage
+-we can use iframe tag for
+1.display youtube video. 
+2.display google map location.
+3.display one website in another website.
+
+
+
+*link : It is used for navigation.
+-To create link in html we use anchore tag(a)
+
+
+
+*How to create basic website
+
+*Table : It is collection rows and columns
+
+
+
+========================================================================================================================
+Day 02     27/11/24
+
+*From : It is use to get data from user.
+-To submit forms data we have two method
+
+get method : -Form data will be visible in browser url.
+             -With get method we can not send confidential data.
+             -There is character limitation with get method to send data through url.
+
+Post method : -Form data will be not visible to user it will save in body object.
+              -With post method we can submit confidential data.
+              -There is no character limitation to submit data.
+
+
+
+*Task : create a boorkmark using 7wonders.

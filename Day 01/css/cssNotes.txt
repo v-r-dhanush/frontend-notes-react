@@ -1,0 +1,84 @@
+Day 02    27/11/2024
+
+*CSS : -It is use to design webapp and to make it responsive.
+       -css stand for Cascading style sheet.
+       -Latest version of css is css3.
+
+Q.what are types of css.
+Q.how to use css
+-there are three ways to use css
+1.inline css : inside a starting tag we use style attribute and in that we property and value.
+2.internal css : In html file we use style tag and in that we select element apply css property.
+            syntax : selector{
+                    property:value;
+                    property:value;
+                    property:value;
+                 }
+3.external css : In this we create a seperate css file and import that css in html file head part.
+             syntax : selector{
+                    property:value;
+                    property:value;
+                    property:value;
+                 }
+
+*Selector in css : selecting an element 
+1.element or tag name selector : In this we use element or tag name to apply css property.
+2.group selector : In this we make group selector to apply css property.
+3.id selector(#) : If you have to apply css property to an single element in that case we use it.
+4.class selector(.) : when you have to apply bunch of css  property to specific element in that case we use it.
+5.universal selector(*) : When we have to apply all css property to all element available in html page.
+
+*border  : A line drown around an element
+
+*Box Model : It contain four point
+1.content : It can be any image or text
+2.padding : It is use to clear are between content and element border
+3.border : A line drown around an element
+4.margin : It is use to clear area outside element border.
+
+
+*Position : -It is use to move element after applying left,right,top and bottom properly value.
+            -By default every element has position:static;
+            1.position:static;(default)
+            2.position:relative; element will move from left,right,top and bottom side
+            3.position:absolute; when we want to move child element according to its parent element.
+            4.position:fixed; when we have to fixed on screen window
+            5.position:sticky; when we have to stick element on screen window
+
+
+*Media query : It is used to apply different style rule to an element according to different screen width;
+
+syntax : @media screen and (screen-width){
+    css code
+}
+
+device screen width >= 1200px  x1 screen
+device screen width >= 992px   xg screen
+device screen width >= 768px   md screen
+device screen width >= 576px   sm screen
+device screen width < 576px    xsm screen
+
+
+screen width
+1.max-width : css property will applicable from its minimum width to its max-width not above to it.
+2.min-width : css property will be applicable from its minimum width to above width.
+
+
+======================================================================================================
+
+Day 03    28/11/2024
+
+*box-sizing : It include element border size and element padding size in its actual width 
+*box-sizing : border-box;
+
+
+*float : It is use to move block element side by side
+         Thera are three values ,left,right,none.
+
+
+*overflow : it is use to fit big content into small box.
+overflow : visible;(default)
+overflow : hidden; // content going outside will be hide.
+overflow : scroll: //It will fix big content into box and add scroll break
+
+*flex : it is use to manage website layout with different screen width
