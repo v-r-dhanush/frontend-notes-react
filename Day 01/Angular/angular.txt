@@ -1,8 +1,0 @@
-10/12/2024
-
-ng --version
-
-step 1 : npm install -g @angular/cli   //install angular
-step 2 : ng new projectname //to create project
-step 3 : cd projectname
-step 4 : ng serve or ng s
