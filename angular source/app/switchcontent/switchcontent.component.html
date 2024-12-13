@@ -1,0 +1,15 @@
+<p>switchcontent works!</p>
+<button type="button" class="btn btn-outline-warning" (click)=bikees()>Bike</button>&nbsp;
+<button type="button" class="btn btn-outline-danger" (click)=carees()>Cars</button>
+
+<div *ngFor="let selected of selectedItems">
+  <div (click)="onclick(selected)"class="clickable">
+    {{selected}}
+  </div>
+</div>
+<hr>
+
+<div *ngIf="name">you have selected {{name}}</div>
+
+
+

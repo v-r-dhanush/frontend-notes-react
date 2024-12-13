@@ -1,0 +1,46 @@
+{
+  "products": [
+    {
+      "pname": "Printer",
+      "pprice": 10000,
+      "pcompany": "Sony",
+      "pquantity": "15",
+      "id": "105"
+    },
+    {
+      "id": "e069",
+      "pname": "biometric",
+      "pprice": "5000000",
+      "pcompany": "changepond technologies",
+      "pqaantity": "",
+      "pquantity": "5"
+    },
+    {
+      "id": "9b9e",
+      "pname": "iphone",
+      "pprice": "150000",
+      "pcompany": "changepond technologies",
+      "pqaantity": "",
+      "pquantity": "500"
+    },
+    {
+      "pname": "desktop",
+      "pprice": "150000",
+      "pcompany": "Hp",
+      "pquantity": "500",
+      "id": "5a4f"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "userid": "admin@gmail.com",
+      "userpass": "admin@123"
+    },
+    {
+      "id": "2",
+      "userid": "hero@gmail.com",
+      "userpass": "hero@123"
+    }
+  ]
+}
