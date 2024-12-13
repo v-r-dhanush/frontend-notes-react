@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Simple table</h2>
+    <table border="4">
+        <thead>
+            <tr>
+                <th>S.no</th>
+                <th>Name</th>
+                <th>Post</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>101</td>
+                <td>dhanush</td>
+                <td>full stack developer</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>sai</td>
+                <td>full stack developer</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>javeed</td>
+                <td>full stack developer</td>
+            </tr>
+            <tr>
+                <td>104</td>
+                <td>logesh</td>
+                <td>full stack developer</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Table with rowspan</h2>
+    <table border="" width="50%">
+        <tr>
+            <td rowspan="2">A</td><td>B</td><td>C</td>
+        </tr>
+        <tr>
+            <td>D</td><td rowspan="2">E</td>
+        </tr>
+        <tr>
+            <td>F</td><td>G</td>
+        </tr>
+    </table>
+
+    <h2>Table with colspan</h2>
+    <table border="" width="50%">
+        <tr>
+            <td>A</td><td colspan="2">B</td>
+        </tr>
+        <tr>
+            <td>C</td><td>D</td><td>E</td>
+        </tr>
+        <tr>
+            <td colspan="2">F</td><td>G</td>
+        </tr>
+    </table>
+
+    <h2>Table with rowspan and colspan</h2>
+    <table border="" width="50%">
+        <tr>
+            <td rowspan="2" colspan="2">A</td><td>B</td>
+        </tr>
+        <tr>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>D</td><td>E</td><td rowspan="2" colspan="2">F</td>
+        </tr>
+        
+
+    </table>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .change{
+            border:solid black 5px;
+            margin: auto;
+            padding: 10px;
+        }
+        
+    </style>
+    <title>Replace Task</title>
+</head>
+<body>
+    <form class="change">
+        <div>
+            <textarea name="textarea" id="ufeed"> hi all good all</textarea>
+            <label for="old">OldText:</label>
+            <input type="text"name="old" id="old">
+            <label for="new">NewText:</label>
+            <input type="text" name="new" id="new"><br>
+            <button type="button" onclick="replace()">Replace</button>
+            <button type="button" onclick="replaceall()">ReplaceAll</button>   
+        </div>
+</form>
+
+<script>
+    let t = document.getElementById("ufeed").value;
+
+    function replace(){ 
+        
+        let o = document.getElementById("old").value;
+        let n = document.getElementById("new").value;	
+
+        let v =`${t.replace(o,n)}`;
+        document.getElementById("ufeed").innerHTML=v;
+    }
+  
+     function replaceall(){
+
+        let o = document.getElementById("old").value;
+        let n = document.getElementById("new").value;	
+
+        let v =t.replaceAll(o,n);
+        document.getElementById("ufeed").innerHTML=v;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+02/12/2024
+
+TypeScript :
+-It is super set of javascript.
+-It is compile language.
+-It is strict types language.
+
+*how to know ts is available or not
+*how to install TypeScript
+
+npm i -g TypeScript // to install typescript
+
+npx tsc -v // check typescript version
+
+*how to execute typescript file
+
+npx tsc fileNme.ts // compile ts file and create on plain js file
+node fileName.js // to execute js file 
+
+*variable declaration in ts
+*datatype in ts
+1.number
+2.array
+3.string
+4.enum : It create variable with constant values
+5.any : when we don't know what type of data is going to store in variable in that case we use it.
+6.tupple : It allow us to store multiple type of data into array.
+7.union : It allow us to store multiple values in single variable
+8.boolean
+
+task:write one parameterize function in ts which will take two parameter and dispaly your fullname.
+
+task : w.a.parameterize function  which will rewritten are of circle passing radius values as parameter
+
+
+OOPS :
+1-class : -It is collection of data-member and member-function.
+          -It i templete which we can re-use.
+          -To create class we use class keyword.
+
+
+*this : it refers to current class or object to access its data inside it only.
+
+2.object : -It is an instance of class.
+           -It allows us to access class data-member and member-function outside class.
+syntax: let ObjectName = new ClassName();
+
+Eg:
+create object of class
+
+ let personObj = new Person(102,"rahul","chennai");
+ console.log(personObj.pname);
+ personObj.personDetails();
+
+
+*constructor :-It is special member function of class
+              -It will execute automatically when class object get created or initialize
+              -In ts constructor name must only be constructor.
+
+===========================================================================================================================================================
+03/12/2024
+
+3.Inheritance :
+-accessing parent class property into child class
+-to perform Inheritance in between classes we use extends keyword.
+
+-super() :
+-it represent parent class constructor inside child class constructor.
+-super method must be first statement in child class constructor.
+
+
+4.Encapsulation : 
+-wrapping of data into single unit.
+
+-public : we can access class property inside,outside class as well as in derived(child) class.
+-protected : we can access class property inside same class as well as in derived(child) class.
+-private : we can access class property inside same class only.
+
+5.Polymorphism : It is ability to take more than one form.
+
+-method overloading : when we have multiple method with same name in same class.
+-method overriding : when we have multiple method with same name in different class.
+
+6.abstraction : 
+-hidding implementation and showing necessary information.
+-we can can achieve this by using interface,abstract class,access modifiers(private,protected)
+
+
+*module : 
+-writing ts code in single or multiple file and access it in another file.
+-to achieve this we use export and import keyword
+-to send data we use export
+-to acces it we use import
+
+*interface : 
+-it is signature of class.
+-it contain abtract method.
+-to create interface we use interface keyword.
+-its child class has responsibilty to implement it.
+-to implement interface we use implement keyword.

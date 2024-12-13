@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="uname">Enter Your FullName:</label>
+            <input type="text" name="fname" id="uname" pattern="^[a-zA-Z ]{2,20}$" minlength="2" maxlength="20" placeholder="Enter your Name" required>
+        </div>
+        <div>
+            <label for="upass">Enter Your Password:</label>
+            <input type="password" name="pass" id="upass"  placeholder="Enter your Password" required >
+        </div>
+        <div>
+        <label for="uemail">Enter Your EmailID:</label>
+            <input type="email" name="mailID" id="uemail"  placeholder="Enter your MailID" required>
+        </div>
+        <div>
+            <label for="ucontact">Enter Your ContactNo:</label>
+            <input type="text" name="contactno" id="ucontact" pattern="^[0-9]{9,11}$"  placeholder="Enter your Contactno" required>
+        </div>
+        <div>
+            <label for="udob">Enter Your DOB:</label>
+            <input type="date" name="dob" id="udob"   placeholder="Enter your DOB" required>
+        </div>
+        <div>
+            <label for="ugen">Select Your Gender:</label>
+            <input type="radio" name="mgender" value="Male" id="ugen">Male
+            <input type="radio" name="mgender" value="Female" id="ugen">Female
+            <input type="radio" name="mgender" value="Transgender" id="ugen">Transgender
+        </div>
+        <div>
+            <label for="uedu">Enter Your Education:</label>
+            <input type="checkbox" name="edu" id="uedu" value="SSLC">SSLC
+            <input type="checkbox" name="edu" id="uedu" value="HSC">HSC
+            <input type="checkbox" name="edu" id="uedu" value="UG">UG
+            <input type="checkbox" name="edu" id="uedu" value="PG">PG
+        </div>
+        <div>
+            <label for="">Enter Your Courses:</label>
+            <select multiple name="courses" id="" required>
+                <option value="">Select your Courses</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                <option value="DotNet">DotNet</option>
+                <option value="HTML">Html</option>
+            </select>
+        </div>
+        <div>
+            <label for="ufees">Fees:</label>
+            <input type="number" name="fees" id="ufees" value="10000" readonly disabled>
+        </div>
+        <div>
+            <label for="ufeed">Enter Your feedback:</label>
+            <textarea name="feedback" id="ufeed"   placeholder="enter here"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

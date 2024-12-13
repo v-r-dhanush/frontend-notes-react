@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .block{
+    border: solid, 2px, red;
+    width: 20%;
+    height: 100px;
+    padding: 5px;
+    float: left;
+    overflow: scroll;
+}
+
+*{
+    box-sizing: border-box;
+}
+header{border-bottom: 5px solid;
+    background-color: red;
+    height: 100px;
+    text-align: center;
+}
+        @media screen and (max-width:1200px){
+    .header{
+        background-color: red;
+        border: black 5px solid;
+    }
+}
+@media screen and (max-width:992px){
+    header{
+        background-color: red;
+        border: black 5px solid;
+    }
+    .block{
+        width:25%;
+    }
+}
+@media screen and (max-width:768px){
+    header{
+        background-color: red;
+        border: black 5px solid;
+    }
+    .block{
+        width:33.33%;
+    }
+}
+@media screen and (max-width:576px){
+    header{
+        background-color: red;
+        border: black 5px solid;
+    }
+    .block{
+        width:50%;
+    }
+}
+@media screen and (max-width:320px){
+    header{
+        background-color: red;
+        border: black 5px solid;
+    }
+    .block{
+        width:100%;
+    }
+}
+img{
+    width: 100%;
+    height: 100px;
+}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <header>DMK</header>
+    <div class="block">
+        <img src="../assests/images/anna.jpeg" alt="">
+    </div>
+    <div class="block">
+        <img src="../assests/images/kalaigar.jpeg" alt="">
+    </div>
+    <div class="block">
+        <img src="../assests/images/stalin.jpeg" alt="">
+    </div>
+    <div class="block">
+        <img src="../assests/images/udhya.jpeg" alt="">
+    </div>
+    <div class="block">
+        <img src="../assests/images/inba.jpeg" alt="">
+    </div>
+</body>
+</html>

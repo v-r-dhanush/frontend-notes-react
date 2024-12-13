@@ -1,0 +1,12 @@
+.special{
+    width: 30px;
+    height : 300px;
+    background-color: blue;
+    border: 3px solid red;
+    margin:auto;
+    transition: 3s;
+}
+.special:hover{
+    background-color: aqua;
+    transform: rotateX(320deg);
+}

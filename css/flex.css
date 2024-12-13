@@ -1,0 +1,54 @@
+header{
+    border-bottom: red 5px solid;
+    background-color: black;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    margin: 0px;
+}
+
+.dmk{
+    border: 5px red solid;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 5px 0px 0px red;
+}
+
+*{
+    box-sizing: border-box;
+}
+.text{
+    color: white;
+    font-size: 75px;
+    text-shadow: 6px 0px 0px red;
+    font-weight: 700;
+    margin-left: 15px;
+}
+
+.karuna{
+    border: 5px solid black;
+    width: 160px;
+    height: 190px;
+    border-radius: 8px;
+    margin: 5px;
+    overflow: hidden;
+}
+.karuna img{
+    width: 100%;
+}
+.anna{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+@media screen and (max-width:576px){
+    header{
+        display: grid;
+    }
+}

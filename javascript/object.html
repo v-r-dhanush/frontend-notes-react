@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let emp={
+            id:101,
+            name:"dhanush",
+            single:true,
+            details:function (){
+                return `Id:${this.id} Name:${this.name} Single:${this.single} <br>`
+            },
+            address:{
+                city:"chennai",
+                pin:10001,
+                state:"tamil Nadu"
+            }
+        };
+
+        document.write("Id:"+emp.id+" Name:"+emp.name+" Single:"+emp.single+"<br>");
+        document.write(`Id:${emp.id} Name:${emp.name} Single:${emp.single} <br>`);
+        document.write(emp.details());
+        document.write(`City: ${emp.address.city} Pin: ${emp.address.pin} State: ${emp.address.state} <br>`)
+
+
+        //array of object
+
+        let std=[
+            {id:1,name:"tata",contact:111111,gender:"male"},
+            {id:2,name:"musk",contact:222222,gender:"male"},
+            {id:3,name:"warren",contact:3333333,gender:"male"},
+    ]
+    //document.write{`Id:${std[0].id} name:${std[0].name} contact:${std[0].contact} gender:${std[0].gender}`}
+
+    for(let s of std){
+        document.write(` <br>Id:${s.id} Name:${s.name} Contact:${s.contact} gender:${s.gender}`);
+    }
+    </script>
+</body>
+</html>

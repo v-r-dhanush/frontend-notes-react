@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let frontEnd=["Html","Css","Javascript"];
+        document.write(`${frontEnd}<br>`);
+        let backEnd=["Java","Python"];
+        document.write(`${backEnd}<br>`);
+        console.log(backEnd);
+        //concate : to merge two or more array
+        let fullstack = frontEnd.concat(backEnd,"Dot Net","Php");
+        document.write(`${fullstack}<br>`);
+        console.log(fullstack);
+
+        // spread operator : to merge two or more array
+        let fullstacktwo=[...frontEnd,...backEnd,"Dot Net","Php"];
+        console.log(fullstacktwo);
+    </script>
+</body>
+</html>
